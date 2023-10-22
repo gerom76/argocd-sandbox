@@ -1,0 +1,5 @@
+# Set default behavior to automatically normalize line endings.
+* text=auto
+
+# Force json files to always use LF line endings so if they are served via S3 their checksum does not change due to different local line ending
+*.json text eol=lf
