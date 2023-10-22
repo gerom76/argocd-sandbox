@@ -5,13 +5,12 @@
 replicaCount: 1
 
 image:
-  repository: "harbor.xcr.svcs01.prod.us-east-1.kaas.sws.siemens.com/ebs-csa/create"
+  repository: "create-sb"
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1.0"
+  tag: "latest"
 
-imagePullSecrets:
-  - name: harbor-registry-secret2
+imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
 
